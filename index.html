@@ -15,37 +15,36 @@
 <body>
     <main>
         <section class="robotron">
-            <img class="robo" src="img/robotron.png" alt="Robotron" id="robotron">
+            <img class="robo" src="img/robotron-amarelo.png" alt="Robotron" id="robotron">
             <figcaption class="titulo">ROBOTRON <br>2000</figcaption>
         </section>
 
-        <section class="box estatisticas">
-            <div class="estatistica">
-                <p class="estatistica-titulo">Força</p>
-                <div class="estatistica-valor">
-                    <p class="estatistica-numero" data-estatistica="forca">00</p>
+            <section class="box estatisticas">
+                <div class="estatistica">
+                    <p class="estatistica-titulo">Força</p>
+                    <div class="estatistica-valor">
+                        <p class="estatistica-numero" data-estatistica="forca">00</p>
+                    </div>
                 </div>
-            </div>
-            <div class="estatistica">
-                <p class="estatistica-titulo">Poder</p>
-                <div class="estatistica-valor">
-                    <p class="estatistica-numero" data-estatistica="poder">00</p>
+                <div class="estatistica">
+                    <p class="estatistica-titulo">Poder</p>
+                    <div class="estatistica-valor">
+                        <p class="estatistica-numero" data-estatistica="poder">00</p>
+                    </div>
                 </div>
-            </div>
-            <div class="estatistica">
-                <p class="estatistica-titulo">Energia</p>
-                <div class="estatistica-valor">
-                    <p class="estatistica-numero" data-estatistica="energia">00</p>
+                <div class="estatistica">
+                    <p class="estatistica-titulo">Energia</p>
+                    <div class="estatistica-valor">
+                        <p class="estatistica-numero" data-estatistica="energia">00</p>
+                    </div>
                 </div>
-            </div>
-            <div class="estatistica">
-                <p class="estatistica-titulo">Velocidade</p>
-                <div class="estatistica-valor">
-                    <p class="estatistica-numero" data-estatistica="velocidade">00</p>
+                <div class="estatistica">
+                    <p class="estatistica-titulo">Velocidade</p>
+                    <div class="estatistica-valor">
+                        <p class="estatistica-numero" data-estatistica="velocidade">00</p>
+                    </div>
                 </div>
-            </div>
-        </section>
-
+            </section>
         <section class="equipamentos">
             <form action="" class="montador">
                 <div class="box montador-conteudo">
@@ -94,10 +93,21 @@
                         </div>
                     </div>
                 </div>
-                <input type="submit" value="Iniciar produção" class="producao" id="producao">
+                <div class="robotron__cores">
+                    <input type="submit" value="Iniciar produção" class="producao" id="producao">
+                    <ul class="lista">
+                        <li class="lista__robos__cores"><button class="botao__cor" data-cor="amarelo">Amarelo</button></li>
+                        <li class="lista__robos__cores"><button class="botao__cor" data-cor="azul">Azul</button></li>
+                        <li class="lista__robos__cores"><button class="botao__cor" data-cor="branco">Branco</button></li>
+                        <li class="lista__robos__cores"><button class="botao__cor" data-cor="preto">Preto</button></li>
+                        <li class="lista__robos__cores"><button class="botao__cor" data-cor="rosa">Rosa</button></li>
+                        <li class="lista__robos__cores"><button class="botao__cor" data-cor="vermelho">Vermelho</button></li>
+                    </ul>
+                </div>
             </form>
         </section>
     </main>
     <script src="js/main.js"></script>
+    <script src="js/cor.js"></script>
 </body>
 </html>

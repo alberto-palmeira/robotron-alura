@@ -2,6 +2,7 @@
     --main-cinza: #CCCCCC;
     --main-branco: #FFFFFF;
     --main-preto: #000000;
+    --fonte: 'Teko', sans-serif;
 }
 
 * {
@@ -18,7 +19,7 @@ body {
 }
 
 body, input {
-    font-family: 'Teko', sans-serif;
+    font-family: var(--fonte);
 }
 
 main {
@@ -131,8 +132,15 @@ main {
     border-color: var(--main-cinza);
 }
 
+.robotron__cores {
+    align-items: center;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1rem;
+}
+
 .producao {
-    margin-top: 1em;
+    align-self: center;
     font-size: 2em;
     text-transform: uppercase;
     padding: 0.2em 1em;
@@ -143,9 +151,31 @@ main {
     cursor: pointer;
 }
 
-.producao:hover {
+.producao:hover, .botao__cor:hover {
     background: var(--main-preto);
     color: var(--main-branco)
+}
+
+.lista {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: 1px solid var(--main-preto);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0.25rem 0.5rem;
+    z-index: 1;
+}
+
+.botao__cor {
+    cursor: pointer;
+    font-family: var(--fonte);
+}
+
+.invisivel {
+    display: none;
 }
 
 
